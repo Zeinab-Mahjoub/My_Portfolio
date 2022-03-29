@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+.skills, .about .aboutMe .img-wrapper, .about .aboutMe .aboutMe-inside p, .about .aboutMe .aboutMe-inside h3 {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 500ms, transform 500ms;
+}
+
+.skills.is-visible, .about .aboutMe .img-wrapper.is-visible, .about .aboutMe .aboutMe-inside p.is-visible, .about .aboutMe .aboutMe-inside h3.is-visible, .about h1.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+* ::selection,
+* ::before, * ::after {
+  background: none;
+}
+
+body {
+  max-width: 100%;
+  background: url("../images/3.jpg");
+  background-attachment: fixed;
+  background-position: left 10%;
+  background-size: cover;
+}
+
+.button_container {
+  position: fixed;
+  top: 5%;
+  right: 2%;
+  height: 27px;
+  width: 35px;
+  cursor: pointer;
+  z-index: 100;
+  transition: opacity 0.25s ease;
+}
+.button_container.active .top {
+  transform: translateY(11px) translateX(0) rotate(45deg);
+  background: #FFF;
+}
+.button_container.active .middle {
+  opacity: 0;
+  background: #FFF;
+}
+.button_container.active .bottom {
+  transform: translateY(-11px) translateX(0) rotate(-45deg);
+  background: #FFF;
+}
+.button_container span {
+  background: #ffffff;
+  border: none;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.35s ease;
+  cursor: pointer;
+  border-radius: 1px;
+}
+.button_container span:nth-of-type(2) {
+  top: 11px;
+}
+.button_container span:nth-of-type(3) {
+  top: 22px;
+}
+
+.overlay {
+  position: fixed;
+  background: rgba(0, 21, 43, 0.993);
+  opacity: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  visibility: hidden;
+  transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+  overflow: hidden;
+  z-index: 5;
+}
+.overlay.open {
+  visibility: visible;
+  height: 100%;
+}
+.overlay.open li {
+  animation: fadeInRight 0.5s ease forwards;
+  animation-delay: 0.35s;
+  width: 100%;
+  height: 100%;
+}
+.overlay.open li:nth-of-type(2) {
+  animation-delay: 0.4s;
+}
+.overlay.open li:nth-of-type(3) {
+  animation-delay: 0.45s;
+}
+.overlay.open li:nth-of-type(4) {
+  animation-delay: 0.5s;
+}
+.overlay nav.overlay-menu {
+  position: relative;
+  height: 70%;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  font-family: sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+.overlay nav.overlay-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative;
+  height: 100%;
+  width: 80%;
+}
+.overlay nav.overlay-menu ul hr {
+  background-color: #b5b5b5;
+}
+.overlay nav.overlay-menu ul li {
+  display: block;
+  height: calc(100% / 10);
+  min-height: 50px;
+  position: relative;
+  opacity: 0;
+  width: 100%;
+}
+.overlay nav.overlay-menu ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  color: #FFF;
+  text-decoration: none;
+  overflow: hidden;
+}
+.overlay nav.overlay-menu ul li a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0%;
+  transform: translateX(-50%);
+  height: 2px;
+  background: #FFF;
+  transition: 0.35s;
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    left: 20%;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+span {
+  font-size: 5rem;
+  font-weight: bold;
+  line-height: 4.5rem;
+  font-family: "Archivo Black", sans-serif;
+  text-shadow: 1px 1px 10px #333333;
+}
+span.fill {
+  color: #ffffff;
+  z-index: 0;
+}
+
+#particles-js {
+  height: calc(100vh + 200px) !important;
+  background: rgba(0, 24, 85, 0.35) !important;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+#particles-js:after {
+  position: absolute;
+  width: 100%;
+  height: 300px;
+  content: "";
+  left: 0;
+  bottom: -18%;
+  background-color: #151925;
+  transform: skewY(6deg);
+}
+#particles-js .content {
+  margin-bottom: 100px;
+}
+#particles-js .content #iAm span.firstLetter {
+  color: #ff0080;
+  font-size: 6.5rem;
+  text-shadow: -10px -8px 0px #05C2C9;
+}
+#particles-js .content #iAm a {
+  border: 1.5px solid #ff0080;
+  color: #ff0080;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0.6rem 3rem;
+  display: inline-block;
+  margin-top: 70px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 1px;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+}
+#particles-js .content #iAm a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 130%;
+  height: 100%;
+  background-color: #ff0080;
+  transform: translate(-110%, 0) skew(-30deg);
+  transition: 0.5s;
+  z-index: -2;
+  border: 1.5px solid #ff0080;
+}
+#particles-js .content #iAm a:hover {
+  color: #ffffff;
+}
+#particles-js .content #iAm a:hover:before {
+  transform: translate(-5%, 0) skew(-15deg);
+}
+
+.about {
+  background: #151925;
+  height: 800px;
+  overflow: hidden;
+  color: #ffffff;
+}
+.about .container {
+  background-color: #F6FAFD;
+}
+.about h1 {
+  font-family: "Archivo Black", sans-serif;
+  color: #ff0080;
+  font-size: 4rem;
+  flex: 1 0 100%;
+  margin-top: -100px;
+  z-index: 4;
+  padding: 0 0 3rem 0;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 500ms, transform 500ms;
+}
+.about .aboutMe {
+  background-color: #F6FAFD;
+  overflow: hidden;
+}
+.about .aboutMe .aboutMe-inside h3 {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 2rem;
+  color: #ff0080;
+}
+.about .aboutMe .aboutMe-inside p {
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #000a24;
+}
+.about .aboutMe .img-wrapper {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4.5px 3.6px rgba(0, 0, 0, 0.024), 0 12.5px 10px rgba(0, 0, 0, 0.035), 0 30.1px 24.1px rgba(0, 0, 0, 0.046), 0 100px 80px rgba(0, 0, 0, 0.07);
+}
+.about .aboutMe .img-wrapper img {
+  width: 130%;
+  position: absolute;
+  top: -15%;
+  left: -20%;
+}
+
+.skills {
+  margin: 60px auto;
+}
+.skills .skills-wrapper {
+  padding: 0 2rem;
+}
+.skills li {
+  margin: 20px 0;
+}
+.skills li h3 {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 500 !important;
+  font-size: 18px !important;
+  padding: 0;
+  margin: 0;
+  color: #000a24;
+}
+.skills li .percent {
+  font-size: 18px;
+  color: #000a24;
+  text-shadow: none;
+  font-weight: 300;
+  float: right;
+  line-height: 23px;
+  font-family: "Roboto", sans-serif;
+}
+.skills li .bar {
+  background-color: #E8E8ED;
+  display: inline-block;
+  width: 80%;
+  height: 10px;
+  border-radius: 1px;
+  overflow: hidden;
+}
+.skills li .bar span {
+  height: 100%;
+  float: left;
+  background-color: #049095;
+}
+.skills .html {
+  width: 100%;
+}
+.skills .css {
+  width: 100%;
+}
+.skills .bootstrap {
+  width: 100%;
+}
+.skills .javascript {
+  width: 80%;
+}
+.skills .jquery {
+  width: 80%;
+}
+.skills .sass {
+  width: 100%;
+}
+.skills .less {
+  width: 100%;
+}
+.skills .es6 {
+  width: 100%;
+}
+.skills .github {
+  width: 100%;
+}
+
+footer {
+  height: 1000px;
+}
+
+@media only screen and (max-width: 768px) {
+  .about .aboutMe, .about .skills {
+    flex: 1 0 100%;
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=styles.scss.map */

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Zeinab Mahjoub - Web Developer</title>
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+        <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix  in="blur" mode="matrix" values="1 0 0  0  0
+                                                            0 1 0  0  0
+                                                            0 0 1  0  0
+                                                            0 0 0 18 -7" />
+        </filter>
+    </defs>
+</svg>
+
+<!--=================    header     ==================-->
+<header class="header-wrapper d-flex align-items-center">
+    <div class="container content d-flex flex-wrap flex-column justify-content-center align-items-center position-absolute">
+
+        <div class="button_container align-self-start" id="toggle">
+            <span class="top"></span>
+            <span class="middle"></span>
+            <span class="bottom"></span>
+        </div>
+
+        <div class="overlay" id="overlay">
+            <nav class="overlay-menu">
+                <ul>
+                    <li ><a href="#">Home</a></li>
+                    <hr>
+                    <li><a href="#">About</a></li>
+                    <hr>
+                    <li><a href="#">Work</a></li>
+                    <hr>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="p-5 mb-5 w-100" id="iAm">
+            <div id="effect" style="white-space: pre-line;"></div>
+            <a href="#" class="">Contact me!</a>
+        </div>
+
+    </div>
+</header>
+
+<!-------------------     about     --------------------->
+
+<section class="about">
+
+    <div class="container pt-0 d-flex flex-wrap">
+        <div class="aboutMe pt-0 w-50 px-3 d-flex align-items-center justify-content-center flex-wrap">
+            <div class="aboutMe-inside pb-4 d-flex justify-content-center w-100 flex-wrap">
+                <h1 class="show-on-scroll">About</h1>
+
+                <div class="img-wrapper-0 w-100  show-on-scroll">
+                    <div class="img-wrapper">
+                        <img src="images/4-opt-2.jpg" alt="" class="">
+                    </div>
+                </div>
+
+                <h3 class="w-100 pt-5 show-on-scroll">Who am I?</h3>
+                <p class="details pt-4 show-on-scroll">
+                I'm a full-stack web developer who loves developing new ways of interacting and animating on the web. These days my time is spent researching, coding and designing.
+                    <br>
+                    <br>
+                    You can usually find me listening to music, trying new dessert recipes, running, working on personal projects, or watching series (Science Fiction and Comedy are my favorite).
+                </p>
+            </div>
+        </div>
+
+<!--=================   skills   =================-->
+        <div class="skills w-50 px-3 d-inline show-on-scroll">
+            <div class="skills-wrapper">
+                <li>
+                    <h3>HTML5</h3>
+                    <span class="bar">
+                    <span class="html" style="width: 100%;"></span>
+                </span>
+                    <span class="percent">100%</span>
+                </li>
+                <li>
+                    <h3>CSS3</h3>
+                    <span class="bar">
+                    <span class="css" style="width: 100%;"></span>
+                </span>
+                    <span class="percent">100%</span>
+
+                </li>
+                <li>
+                    <h3>Bootstrap</h3>
+                    <span class="bar">
+                    <span class="bootstrap" style="width: 100%;"></span>
+                </span>
+                    <span class="percent">100%</span>
+
+                </li>
+                <li>
+                    <h3>JavaScript</h3>
+                    <span class="bar">
+                    <span class="javascript" style="width: 80%;"></span>
+                </span>
+                    <span class="percent">80%</span>
+
+                </li>
+                <li>
+                    <h3>jQuery</h3>
+                    <span class="bar">
+                    <span class="jquery" style="width: 80%;"></span>
+                </span>
+                    <span class="percent">80%</span>
+
+                </li>
+                <li>
+                    <h3>Sass</h3>
+                    <span class="bar">
+                    <span class="sass" style="width: 100%;"></span>
+                </span>
+                    <span class="percent">100%</span>
+
+                </li>
+                <li>
+                    <h3>LESS</h3>
+                    <span class="bar">
+                    <span class="less" style="width: 100%;"></span>
+                </span>
+                    <span class="percent">100%</span>
+
+                </li>
+                <li>
+                    <h3>ECMAScript 6</h3>
+                    <span class="bar">
+                    <span class="es6" style="width: 100%;"></span>
+                </span>
+                    <span class="percent">100%</span>
+
+                </li>
+                <li>
+                    <h3>Git/GitHub</h3>
+                    <span class="bar">
+                    <span class="github" style="width: 100%;"></span>
+                </span>
+                    <span class="percent">100%</span>
+
+                </li>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--===============     footer    ==============-->
+<footer class=" ">
+    <div class="container contact d-flex justify-content-center flex-wrap">
+        <h3 class="d-flex justify-content-center w-100 show-on-scroll ">Contact</h3>
+        <p class="show-on-scroll">Let's start a project together, don't hesitate to contact me!</p>
+        <form action="" class="d-flex justify-content-center flex-wrap show-on-scroll">
+            <input type="text" placeholder="Your Name" class="w-100">
+            <input type="email" placeholder="Your Mail" class="w-100">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" class="w-100"></textarea>
+            <a href="#">Submit</a>
+        </form>
+    </div>
+
+<!--  ----------------  social-btns  ---------------------  -->
+    <div class="social-btns show-on-scroll">
+        <div class="btn-wrapper d-flex justify-content-center align-items-center flex-wrap">
+            <a class="btn mail show-on-scroll" href="mailto: zmahjoub99@gmail.com"><i class="fa fa-envelope"></i></a>
+            <a class="btn instagram show-on-scroll" href="#"><i class="fab fa-instagram"></i></a>
+            <a class="btn linkedin show-on-scroll" href="https://ir.linkedin.com/in/zeinab-mahjoub-8b2342200"><i class="fab fa-linkedin-in"></i></a>
+            <a class="btn twitter show-on-scroll" href="https://twitter.com/zeinabmahjoub"><i class="fab fa-twitter"></i></a>
+            <a class="btn github show-on-scroll" href="https://github.com/Zeinab-Mahjoub"><i class="fab fa-github"></i></a>
+        </div>
+        <div id="legal" class="d-flex flex-wrap justify-content-center align-items-center">&copy; 2021 - Zeinab Mahjoub</div>
+    </div>
+</footer>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="js/01.js"></script>
+
+<script>
+    let     timer           = 0
+    const   intervalTime    = 200
+
+    window.onresize = () => {
+        (timer > 0) && clearTimeout(timer)
+        timer = setTimeout(resetScreenSize(), intervalTime)
+    }
+
+    window.addEventListener("mousemove",
+        e => {
+            mouse.x = e.clientX
+            mouse.y = e.clientY
+        }, false
+    )
+
+
+    const   CANVAS      = document.createElement( 'canvas' )
+    CANVAS.id           = "canvas"
+    document.body.appendChild(CANVAS)
+    const   CONTEXT     = canvas.getContext("2d")
+
+
+    class Ball {
+        constructor() {
+            this.x     = mouse.x
+            this.y     = mouse.y
+            this.angle = Math.PI * 2 * Math.random()
+            this.r     = 5 + 30 * Math.random()
+
+            this.hue   = (1 + Math.cos(this.angle)) /2 * 360
+            this.alpha = (1 + Math.cos(this.angle)) /2
+            this.color = "hsl("
+                + this.hue
+                + ",100%, 50%)"
+
+            this.vx    = (1.3 + Math.random() * 0.3) * Math.cos(this.angle)    // 初期値: (1.3 ～ 1.6) * cos
+            this.vy    = (1.3 + Math.random() * 0.3) * Math.sin(this.angle)    // 初期値: (1.3 ～ 1.6) * sin
+        }
+    }
+
+
+
+    class BigBall extends Ball {
+        update() {
+            this.x      +=  (mouse.x - this.x) * 0.3
+            this.y      +=  (mouse.y - this.y) * 0.3
+
+            this.angle  +=  0.05
+            this.hue    =   Math.floor((1 + Math.cos(this.angle)) /2 * 360)
+            this.color  =   "hsl("
+                + this.hue
+                + ",100%, 50%)"
+        }
+    }
+
+
+
+    class SmallBall extends Ball {
+        constructor(x, y) {
+            super()
+            this.x      =   x
+            this.y      =   y
+        }
+        update() {
+            this.x     +=   this.vx
+            this.y     +=   this.vy
+            this.r     =    Math.max(this.r * 0.99 - 0.01, 0)
+
+            this.angle +=   0.05
+            this.hue   = Math.floor((1 + Math.cos(this.angle)) /2 * 360)
+            this.color = "hsl("
+                + this.hue
+                + ",100%, 50%)"
+        }
+    }
+
+
+    const removeBall = () => {
+        smallBallList = smallBallList.filter(
+            b => !( b.x + b.r  <  0      ||
+                b.x - b.r  >  width  ||
+                b.y + b.r  <  0      ||
+                b.y - b.r  >  height ||
+                b.r       === 0
+            )
+        )
+    }
+
+
+
+    const loopi= () => {
+
+        CONTEXT.clearRect(0, 0, width, height)
+
+
+        if(count === randomCount){
+            smallBallList.push(new SmallBall(bigBall.x, bigBall.y))
+            count       = 0
+            randomCount = 3 + Math.floor(Math.random() * 5)
+        }
+
+        count++
+
+
+        smallBallList.forEach(
+            b => {
+                CONTEXT.fillStyle = b.color
+                CONTEXT.beginPath()
+                CONTEXT.arc(b.x, b.y, b.r, 0, Math.PI * 2, false)
+                CONTEXT.fill()
+
+                b.update()
+            }
+        )
+
+        bigBall.update()
+
+        CONTEXT.fillStyle = bigBall.color
+        CONTEXT.beginPath()
+        CONTEXT.arc(bigBall.x, bigBall.y, bigBall.r, 0, Math.PI * 2, false)
+        CONTEXT.fill()
+
+        removeBall()
+
+
+        requestAnimationFrame(loopi)
+    }
+
+
+
+    const resetScreenSize = () => {
+        width       = canvas.width  = window.innerWidth
+        height      = canvas.height = window.innerHeight
+    }
+
+
+
+
+
+    let     width           = CANVAS.width  = window.innerWidth,
+        height          = CANVAS.height = window.innerHeight,
+        mouse           = {x: width / 1.3, y: height /2}
+
+    const   bigBall         = new BigBall
+    bigBall.r               = 40
+    let     smallBallList   = new Array
+
+    let     count           = 0,
+        randomCount     = 1
+    loopi()
+</script>
+</body>
+</html>
